@@ -1,6 +1,5 @@
 export class RegisterVehicle {
   handle (httpRequest: any): any {
-    console.log(httpRequest.body.name)
     if (httpRequest.body.name === undefined) {
       return {
         statusCode: 400,
