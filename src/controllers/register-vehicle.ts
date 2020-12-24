@@ -1,5 +1,7 @@
+import { HttpResponse, HttpRequest } from '../interfaces/http-interface'
+
 export class RegisterVehicle {
-  handle (httpRequest: any): any {
+  handle (httpRequest: HttpRequest): HttpResponse {
     if (httpRequest.body.name === undefined) {
       return {
         statusCode: 400,
